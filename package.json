@@ -1,0 +1,18 @@
+{
+  "name": "arnav-employment-assessment",
+  "version": "1.0.0",
+  "description": "Simple trainee-level jQuery + JSON Server implementation for Arnav Agarwal.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+
+  "dependencies": {
+    "json-server": "^1.0.0-beta.15"
+  }
+}

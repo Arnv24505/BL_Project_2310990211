@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f5f5f5;
+  color: #222;
+}
+h1 {
+  text-align: center;
+}
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.filters input,
+.filters select,
+.filters button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.department-filters {
+  display: none;
+  margin-bottom: 15px;
+}
+.department-filters label {
+  margin-right: 12px;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  flex: 1 1 calc(25% - 15px);
+  box-sizing: border-box;
+  min-width: 220px;
+}
+.card img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+.card h3 {
+  margin: 5px 0;
+}
+.card p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+.skill {
+  display: inline-block;
+  background: #eee;
+  padding: 3px 6px;
+  margin: 2px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.empty {
+  text-align: center;
+  padding: 30px;
+  background: white;
+}
+.highlight {
+  background: yellow;
+}
+@media (max-width: 900px) {
+  .card {
+    flex-basis: calc(50% - 15px);
+  }
+}
+@media (max-width: 600px) {
+  .card {
+    flex-basis: 100%;
+  }
+  .filters > * {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

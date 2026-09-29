@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Attendance Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Attendance Tracker</h1>
+    <div class="top">
+      <input type="date" id="date" />
+      <button id="sync">Sync Pending Records</button>
+      <span id="pending">0 records pending sync</span>
+    </div>
+    <div id="message"></div>
+    <div class="counts">
+      <b>Present: <span id="present">0</span></b>
+      <b>Absent: <span id="absent">0</span></b>
+      <b>WFH: <span id="wfh">0</span></b>
+      <b>Leave: <span id="leave">0</span></b>
+    </div>
+    <div id="employees"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
